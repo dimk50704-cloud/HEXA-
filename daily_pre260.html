@@ -16,9 +16,22 @@ button{border:none;background:linear-gradient(135deg,var(--accent),#5aa3ff);colo
 .center-links{display:flex;flex-direction:column;gap:16px;max-width:520px;margin:40px auto}.home-link{display:block;padding:18px 20px;border-radius:16px;background:#151f34;color:var(--text);text-decoration:none;border:1px solid var(--line)}.home-link strong{display:block;font-size:22px;margin-bottom:6px;color:var(--accent)}
 @media (max-width:900px){.target-grid{grid-template-columns:1fr}} @media (max-width:720px){.form-grid,.kpis{grid-template-columns:1fr}}
 </style></head>
-<body><div class="wrap"><div class="hero"><div><h1>2026每日經驗統計</h1><p>260前 每日 / 怪公 / EXP計算</p><div class="nav"><a href="../index.html">首頁</a><a href="./farm.html">黃金草莓農場項目</a><a class="active" href="./daily_pre260.html">260前 每日 / 怪公 / EXP計算</a></div></div><div class="badge">單頁獨立可用</div></div>
+<body><div class="wrap"><div class="hero"><div>
+<h1>2026每日經驗統計</h1>
+<p>260前 每日 / 怪公 / EXP計算</p>
+
+<div class="nav">
+/HEXA-/首頁</a>
+/HEXA-/pages/farm.html黃金草莓農場項目</a>
+/HEXA-/pages/daily_pre260.html260前 每日 / 怪公 / EXP計算</a>
+</div>
+
+</div>
+<div class="badge">單頁獨立可用</div>
+</div>
+
 <div class="grid">
-<section class="card"><h2>一、260前 每日 / 怪公 / EXP計算</h2><div class="note">本頁主要設計給 260 等前使用；若結果推到 260 以上，仍會顯示幾等幾%，其中 260–269 使用正式資料，270+ 才標記為估算。</div><div class="form-grid"><div class="field"><label>初始等級</label><input id="extra_startLv" type="number" min="200" step="1" value="200"></div><div class="field"><label>初始經驗 %</label><input id="extra_startPct" type="number" min="0" max="99.999" step="0.01" value="0"></div><div class="field"><label>升等模式</label><select id="extra_mode"><option value="1">升1等</option><option value="5" selected>升5等（活動）</option></select></div></div>
+<section class="card"><h2>>一、260前 每日 / 怪公 / EXP計算</h2><div class="note">本頁主要設計給 260 等前使用；若結果推到 260 以上，仍會顯示幾等幾%，其中 260–269 使用正式資料，270+ 才標記為估算。</div><div class="form-grid"><div class="field"><label>初始等級</label><input id="extra_startLv" type="number" min="200" step="1" value="200"></div><div class="field"><label>初始經驗 %</label><input id="extra_startPct" type="number" min="0" max="99.999" step="0.01" value="0"></div><div class="field"><label>升等模式</label><select id="extra_mode"><option value="1">升1等</option><option value="5" selected>升5等（活動）</option></select></div></div>
 <h3>每日</h3><div class="form-grid"><div class="field"><label>每日天數</label><input id="extra_dailyDays" type="number" min="0" step="1" value="1"></div><div class="field"><label>每日額外乘區 %</label><select id="extra_dailyBonusPct"><option>0</option><option>5</option><option>10</option><option>20</option><option>30</option><option>40</option><option>50</option></select></div></div>
 <h3>怪物公園</h3><div class="form-grid"><div class="field"><label>怪物公園天數</label><input id="extra_parkDays" type="number" min="0" step="1" value="0"></div><div class="field"><label>每天幾場（0–7）</label><input id="extra_parkRunsPerDay" type="number" min="0" max="7" step="1" value="0"></div><div class="field"><label>怪物公園額外乘區 %</label><select id="extra_parkBonusPct"><option>0</option><option>5</option><option>10</option><option>20</option><option>30</option><option>40</option><option>50</option></select></div></div>
 <h3>EXP票</h3><div class="form-grid"><div class="field"><label>EXP票張數</label><input id="extra_ticketCount" type="number" min="0" step="1" value="0"></div></div>
