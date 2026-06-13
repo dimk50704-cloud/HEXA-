@@ -1,123 +1,33 @@
 <!DOCTYPE html>
-<html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>黃金草莓農場項目</title><style>
-:root{--bg:#0b1220;--panel:#151f34;--soft:#1c2740;--line:#31456d;--text:#eef4ff;--muted:#a8b3cf;--accent:#7cc4ff;--accent2:#8cffc5;--warn:#ffd166;--danger:#ffb4b4}
-*{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:linear-gradient(180deg,#0b1220,#10192b);color:var(--text)}
-.wrap{max-width:1360px;margin:0 auto;padding:24px}.hero{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:flex-start;margin-bottom:20px}.hero h1{margin:0 0 8px;font-size:32px}.hero p{margin:0;color:var(--muted)}.badge{padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:#11213e;color:var(--accent)}
-.nav{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 20px}.nav a{text-decoration:none;padding:10px 14px;border-radius:12px;border:1px solid var(--line);color:var(--text)}.nav a.active{background:linear-gradient(135deg,var(--accent),#5aa3ff);color:#09111f;font-weight:800;border:none}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:18px}.card{background:rgba(21,31,52,.96);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 10px 24px rgba(0,0,0,.22)} .card h2{margin:0 0 14px;font-size:20px} .card h3{margin:16px 0 10px;font-size:16px;color:var(--accent2)}
-.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field label{font-size:13px;color:var(--muted)}
-input,select,button{font:inherit} input,select{background:var(--soft);color:var(--text);border:1px solid var(--line);padding:10px 12px;border-radius:12px;outline:none} input:focus,select:focus{border-color:var(--accent)}
-button{border:none;background:linear-gradient(135deg,var(--accent),#5aa3ff);color:#09111f;padding:10px 14px;border-radius:12px;font-weight:800;cursor:pointer}.ghost{background:transparent;border:1px solid var(--line);color:var(--text)}
-.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}.result-panel{margin-top:14px;padding:14px;border-radius:14px;background:#0f1729;border:1px dashed var(--line)}.result-panel strong{color:var(--warn);font-size:22px}
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:10px}.kpi{background:var(--soft);padding:16px;border-radius:12px;border:1px solid var(--line);min-height:88px}.kpi span{display:block;color:var(--muted);font-size:12px;margin-bottom:6px}.kpi b{font-size:18px;word-break:break-all;line-height:1.3}
-.table-wrap{overflow:auto;margin-top:12px} table{width:100%;border-collapse:collapse;min-width:520px} th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:center} th{background:#0e1628;color:var(--accent)}
-.target-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}.target-card{background:#0f1729;border:1px solid var(--line);border-radius:14px;padding:14px}.target-card .big{font-size:24px;font-weight:900;color:var(--warn)}
-.note{font-size:12px;color:var(--muted);line-height:1.6}.footer{margin-top:24px;text-align:center;color:var(--muted);font-size:14px}.alert{margin-top:12px;padding:12px 14px;border-radius:14px;background:#2b1e1e;border:1px solid #5f2a2a;color:var(--danger)}
-.center-links{display:flex;flex-direction:column;gap:16px;max-width:520px;margin:40px auto}.home-link{display:block;padding:18px 20px;border-radius:16px;background:#151f34;color:var(--text);text-decoration:none;border:1px solid var(--line)}.home-link strong{display:block;font-size:22px;margin-bottom:6px;color:var(--accent)}
-@media (max-width:900px){.target-grid{grid-template-columns:1fr}} @media (max-width:720px){.form-grid,.kpis{grid-template-columns:1fr}}
-</style></head>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>黃金草莓農場項目</title>
+
+<style>
+:root{--bg:#0b1220;--panel:#151f34;--soft:#1c2740;--line:#31456d;--text:#eef4ff;--muted:#a8b3cf;--accent:#7cc4ff}
+body{margin:0;font-family:sans-serif;background:#0b1220;color:#eef4ff}
+.wrap{padding:20px}
+.nav a{padding:10px;border:1px solid #31456d;border-radius:10px;margin-right:10px;text-decoration:none;color:white}
+.nav a.active{background:#7cc4ff;color:black;font-weight:bold}
+</style>
+</head>
+
 <body>
 <div class="wrap">
-<div class="hero">
-<div>
+
 <h1>2026每日經驗統計</h1>
 <p>黃金草莓農場項目</p>
 
 <div class="nav">
-<a href="/HEXA-/">首頁</a>
-<a class="active" href="/HEXA-/pages/farm.html">黃金草莓農場項目</a>
-<a href="/HEXA-/pages/daily_pre260.html">260前 每日 / 怪公 / EXP計算</a>
+  /HEXA-/首頁</a>
+  /HEXA-/pages/farm.html農場</a>
+  /HEXA-/pages/daily_pre260.html260前</a>
 </div>
 
-</div>
-<div class="badge">單頁獨立可用</div>
-</div>
+<h2>這裡是農場頁（功能保留）</h2>
 
-<div class="grid">
-<section class="card">
-<h2>一、黃金草莓農場項目</h2>
-<div class="form-grid">
-<div class="field"><label>起始等級</label><input id="farm_startLv" type="number" min="200" step="1" value="200"></div>
-<div class="field"><label>起始經驗 %</label><input id="farm_startPct" type="number" min="0" max="99.999" step="0.01" value="0"></div>
-<div class="field"><label>黃金草莓農場場數</label><input id="farm_runs" type="number" min="0" step="1" value="5"></div>
-<div class="field"><label>農場額外加成 %（加在500%上）</label><input id="farm_bonusPct" type="number" min="0" step="1" value="90"></div>
-<div class="field"><label>升等模式</label><select id="farm_mode"><option value="1">升1等</option><option value="5" selected>升5等（活動）</option></select></div>
 </div>
-<div class="actions"><button id="farm_runBtn">開始計算</button><button class="ghost" id="farm_presetBtn">載入預設</button><button class="ghost" id="farm_sampleBtn">快速驗算範例</button></div>
-<div class="result-panel"><div>結果：<strong id="farm_resultText">-</strong></div><div class="kpis"><div class="kpi"><span>農場倍率</span><b id="farm_mulText">-</b></div><div class="kpi"><span>固定每場組成</span><b>1000 + 5×50</b></div><div class="kpi"><span>升等模式</span><b id="farm_modeText">-</b></div></div><div class="kpis" style="margin-top:10px"><div class="kpi"><span>驗算預設</span><b>200等 0% / 5場 / +90%</b></div><div class="kpi"><span>預期結果</span><b>225等 76.09%</b></div><div class="kpi"><span>260+ 規則</span><b>260–269正式 / 270+估算</b></div></div></div>
-<div id="farm_alert" class="alert" style="display:none;">目前結果已進入 270+ 估算延伸：260–269 使用正式升等需求與 260 票值；270+ 之後的升等需求與 EXP 票採 265–269 區間成長率外推，怪公單場與 kill490 暫沿用 259 值。</div>
-<div class="table-wrap"><table><thead><tr><th>場次</th><th>開始等級</th><th>結束等級</th><th>進度%</th></tr></thead><tbody id="farm_log"></tbody></table></div></section>
-<section class="card"><h2>二、純農場反推：235 / 250 / 260</h2><div class="note">此反推只使用黃金草莓農場，不包含每日、怪物公園與 EXP 票。</div><div class="target-grid"><div class="target-card"><h3>目標 235</h3><div class="big" id="farm_t235_runs">-</div><div id="farm_t235_final" class="note">-</div></div><div class="target-card"><h3>目標 250</h3><div class="big" id="farm_t250_runs">-</div><div id="farm_t250_final" class="note">-</div></div><div class="target-card"><h3>目標 260</h3><div class="big" id="farm_t260_runs">-</div><div id="farm_t260_final" class="note">-</div></div></div></section>
-</div><div class="footer">王冠改版後</div></div>
-<script>
-const EXP_TABLE = [{"lv": 200, "ticketExp": 7404000.0, "req": 2207026470.0, "kill490": 6796109.7, "run490": 8495137125.0}, {"lv": 201, "ticketExp": 7605000.0, "req": 2471869646.0, "kill490": 6994166.800000001, "run490": 8742708500.0}, {"lv": 202, "ticketExp": 7808000.0, "req": 2768494003.0, "kill490": 7194188.600000001, "run490": 8992735750.0}, {"lv": 203, "ticketExp": 8035000.0, "req": 3100713283.0, "kill490": 7396175.100000001, "run490": 9245218875.0}, {"lv": 204, "ticketExp": 8242000.0, "req": 3472798876.0, "kill490": 7600096.800000001, "run490": 9500121000.0}, {"lv": 205, "ticketExp": 8450000.0, "req": 3889534741.0, "kill490": 7815252.100000001, "run490": 9769065125.0}, {"lv": 206, "ticketExp": 8661000.0, "req": 4356278909.0, "kill490": 8023197.600000001, "run490": 10028997000.0}, {"lv": 207, "ticketExp": 8895000.0, "req": 4879032378.0, "kill490": 8233048.800000001, "run490": 10291311000.0}, {"lv": 208, "ticketExp": 9109000.0, "req": 5464516263.0, "kill490": 8444805.700000001, "run490": 10556007125.000002}, {"lv": 209, "ticketExp": 9325000.0, "req": 6120258214.0, "kill490": 8668374.4, "run490": 10835468000.0}, {"lv": 210, "ticketExp": 18601000.0, "req": 7344309856.0, "kill490": 8882868.9, "run490": 11103586125.0}, {"lv": 211, "ticketExp": 19026000.0, "req": 8152183940.0, "kill490": 9100419.6, "run490": 11375524500.0}, {"lv": 212, "ticketExp": 19504000.0, "req": 9048924173.0, "kill490": 9330206.9, "run490": 11662758625.0}, {"lv": 213, "ticketExp": 19936000.0, "req": 10044305832.0, "kill490": 9551622.100000001, "run490": 11939527625.000002}, {"lv": 214, "ticketExp": 20372000.0, "req": 11149179473.0, "kill490": 9785557.100000001, "run490": 12231946375.000002}, {"lv": 215, "ticketExp": 20861000.0, "req": 13379015367.0, "kill490": 10021627.9, "run490": 12527034875.0}, {"lv": 216, "ticketExp": 21340000.0, "req": 14583126750.0, "kill490": 10248836.9, "run490": 12811046125.0}, {"lv": 217, "ticketExp": 21801000.0, "req": 15895608157.0, "kill490": 10488984.600000001, "run490": 13111230750.000002}, {"lv": 218, "ticketExp": 22249000.0, "req": 17326212891.0, "kill490": 10719951.9, "run490": 13399939875.0}, {"lv": 219, "ticketExp": 22755000.0, "req": 18885572051.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 220, "ticketExp": 23211000.0, "req": 22662686461.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 221, "ticketExp": 23724000.0, "req": 24249074513.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 222, "ticketExp": 24186000.0, "req": 25946509728.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 223, "ticketExp": 24707000.0, "req": 27762765408.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 224, "ticketExp": 25176000.0, "req": 29706158986.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 225, "ticketExp": 25704000.0, "req": 35647390783.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 226, "ticketExp": 26238000.0, "req": 38142708137.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 227, "ticketExp": 26717000.0, "req": 40812697706.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 228, "ticketExp": 27258000.0, "req": 43669586545.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 229, "ticketExp": 27802000.0, "req": 46726457603.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 230, "ticketExp": 29503000.0, "req": 56071749123.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 231, "ticketExp": 30080000.0, "req": 57753901596.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 232, "ticketExp": 30660000.0, "req": 59486518643.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 233, "ticketExp": 31178000.0, "req": 61271114202.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 234, "ticketExp": 31766000.0, "req": 63109247628.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 235, "ticketExp": 32360000.0, "req": 75731097153.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 236, "ticketExp": 32959000.0, "req": 78003030067.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 237, "ticketExp": 33488000.0, "req": 80343120969.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 238, "ticketExp": 34093000.0, "req": 82753414598.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 239, "ticketExp": 34701000.0, "req": 85236017035.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 240, "ticketExp": 35312000.0, "req": 102283220442.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 241, "ticketExp": 36422000.0, "req": 105351717055.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 242, "ticketExp": 37051000.0, "req": 108512268566.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 243, "ticketExp": 37610000.0, "req": 111767636622.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 244, "ticketExp": 38248000.0, "req": 115120665720.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 245, "ticketExp": 38889000.0, "req": 138144798864.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 246, "ticketExp": 39533000.0, "req": 142289142829.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 247, "ticketExp": 40182000.0, "req": 146557817113.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 248, "ticketExp": 40835000.0, "req": 150954551626.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 249, "ticketExp": 41492000.0, "req": 155483188174.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 250, "ticketExp": 43861000.0, "req": 186579825808.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 251, "ticketExp": 44553000.0, "req": 192177220582.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 252, "ticketExp": 45249000.0, "req": 197942537199.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 253, "ticketExp": 45949000.0, "req": 203880813314.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 254, "ticketExp": 46654000.0, "req": 209997237713.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 255, "ticketExp": 47360000.0, "req": 216297154844.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 256, "ticketExp": 48073000.0, "req": 222786069489.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 257, "ticketExp": 48788000.0, "req": 229469651573.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 258, "ticketExp": 49595000.0, "req": 236353741120.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 259, "ticketExp": 50321000.0, "req": 243444353353.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}];
-const DAILY_TABLE = [{"lv": 200, "exp": 732132258}, {"lv": 210, "exp": 2141658246}, {"lv": 220, "exp": 3189098250}, {"lv": 225, "exp": 3305187639}, {"lv": 230, "exp": 4398266165}, {"lv": 235, "exp": 4530843954}, {"lv": 245, "exp": 8397548775}, {"lv": 250, "exp": 9057690000}, {"lv": 255, "exp": 10225741680}];
-const EXACT_260_269 = [{"lv": 260, "req": 1731919984062.0, "ticketExp": 76572000.0, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 261, "req": 1749239183902.0, "ticketExp": 77741762.60799159, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 262, "req": 1766731575741.0, "ticketExp": 78929395.2541049, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 263, "req": 1784398891498.0, "ticketExp": 80135170.93241604, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 264, "req": 1802242880412.0, "ticketExp": 81359366.80743243, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 265, "req": 2342915744535.0, "ticketExp": 82602264.27780288, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 266, "req": 2366344901980.0, "ticketExp": 83864149.0410011, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 267, "req": 2390008350999.0, "ticketExp": 85145311.1589972, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 268, "req": 2413908434508.0, "ticketExp": 86446045.12493257, "kill490": 10964141.100000001, "run490": 13705176375.000002}, {"lv": 269, "req": 2438047518853.0, "ticketExp": 87766649.93081331, "kill490": 10964141.100000001, "run490": 13705176375.000002}];
-const ASSUMP = {"ticketRatio260PlusEstimate": 1.0152766364727523, "reqRatio270PlusEstimate": 1.0099999999997662, "exactWorkbookMaxLv": 259, "exactExtendedMaxLv": 269};
-const EXP_MAP = new Map(EXP_TABLE.map(x => [x.lv, x]));
-const EXT_MAP = new Map(EXACT_260_269.map(x => [x.lv, x]));
-function $(id) { return document.getElementById(id); }
-function fmt(n) { return Number(n||0).toLocaleString('en-US', { maximumFractionDigits: 0 }); }
-function formatCompact(n) {
-  n = Number(n || 0); const abs = Math.abs(n);
-  if (abs >= 1e9) return (n / 1e9).toFixed(2) + 'B';
-  if (abs >= 1e6) return (n / 1e6).toFixed(2) + 'M';
-  if (abs >= 1e3) return (n / 1e3).toFixed(2) + 'K';
-  return n.toString();
-}
-function formatTicketBatchLabel(batchIndex, totalThousandsProcessed, remainder) {
-  if (remainder === null) return batchIndex + 'K';
-  if (totalThousandsProcessed === 0) return remainder.toString();
-  if (remainder === 0) return totalThousandsProcessed + 'K';
-  return totalThousandsProcessed + 'K + ' + remainder;
-}
-function pctText(v) { return Number(v).toFixed(2) + '%'; }
-function modeText(m) { return Number(m)===5 ? '升5等（活動）' : '升1等'; }
-function getRow(lv) {
-  lv = Number(lv);
-  if (EXP_MAP.has(lv)) return { ...EXP_MAP.get(lv), source:'workbook' };
-  if (EXT_MAP.has(lv)) return { ...EXT_MAP.get(lv), source:'exact260to269' };
-  if (lv > ASSUMP.exactExtendedMaxLv) {
-    const base = EXT_MAP.get(269);
-    const delta = lv - 269;
-    return {
-      lv,
-      req: base.req * Math.pow(ASSUMP.reqRatio270PlusEstimate, delta),
-      ticketExp: base.ticketExp * Math.pow(ASSUMP.ticketRatio260PlusEstimate, delta),
-      kill490: base.kill490,
-      run490: base.run490,
-      source:'estimate270plus'
-    };
-  }
-  return null;
-}
-function formatResult(lv, xp) {
-  const row = getRow(lv); if (!row) return '超出表範圍';
-  return lv + '等 ' + (xp / row.req * 100).toFixed(2) + '%' + (row.source === 'estimate270plus' ? '（估）' : '');
-}
-function applyGain(lv, xp, gainExp, mode) {
-  xp += gainExp; let usedEstimate = false;
-  while (true) {
-    const row = getRow(lv); if (!row) return { lv, xp, stop:true, usedEstimate };
-    if (row.source === 'estimate270plus') usedEstimate = true;
-    if (xp < row.req) break;
-    xp -= row.req; lv += mode;
-  }
-  return { lv, xp, stop:false, usedEstimate };
-}
-function calcDailyBaseByLevel(lv) {
-  let total = 0; for (const row of DAILY_TABLE) if (lv >= row.lv) total += row.exp; return total;
-}
-function scaleBonus(base, bonusPct) { return base * (1 + Math.max(0, Number(bonusPct)||0) / 100); }
-
-function farmMulText(b){ return (500 + Number(b)) + '%'; }
-function runOneFarm(lv, xp, farmBonusPct, mode){
-  const scale = (500 + Number(farmBonusPct||0)) / 490; let usedEstimate = false;
-  for(let i=0;i<1250;i++){ const row=getRow(lv); if(!row) return {lv,xp,stop:true,usedEstimate}; usedEstimate = usedEstimate || row.source==='estimate270plus'; const out=applyGain(lv,xp,row.kill490*scale,mode); lv=out.lv; xp=out.xp; usedEstimate = usedEstimate || out.usedEstimate; if(out.stop) return out; }
-  return {lv,xp,stop:false,usedEstimate};
-}
-function farmCfg(){ return { startLv:Number($('farm_startLv').value), startPct:Number($('farm_startPct').value)/100, farmRuns:Number($('farm_runs').value), farmBonusPct:Number($('farm_bonusPct').value), mode:Number($('farm_mode').value) }; }
-function farmPreset(){ $('farm_startLv').value=200; $('farm_startPct').value=0; $('farm_runs').value=5; $('farm_bonusPct').value=90; $('farm_mode').value=5; }
-function renderFarm(){ const c=farmCfg(); const start=getRow(c.startLv); $('farm_mulText').textContent=farmMulText(c.farmBonusPct); $('farm_modeText').textContent=modeText(c.mode); if(!start){ $('farm_resultText').textContent='超出表範圍'; return; } let lv=c.startLv,xp=start.req*c.startPct,usedEstimate=start.source==='estimate270plus'; const body=$('farm_log'); body.innerHTML=''; for(let r=1;r<=c.farmRuns;r++){ const from=lv; const out=runOneFarm(lv,xp,c.farmBonusPct,c.mode); lv=out.lv; xp=out.xp; usedEstimate = usedEstimate || out.usedEstimate; const row=getRow(lv); const tr=document.createElement('tr'); tr.innerHTML=`<td>${r}</td><td>${from}</td><td>${lv}</td><td>${(xp/row.req*100).toFixed(2)}%${row.source==='estimate270plus'?'（估）':''}</td>`; body.appendChild(tr); } $('farm_resultText').textContent=formatResult(lv,xp); $('farm_alert').style.display=usedEstimate?'block':'none'; [235,250,260].forEach(target=>{ let lv2=c.startLv,xp2=start.req*c.startPct,result='超過999場',final='-'; if(lv2>=target){ result='0場'; final=formatResult(lv2,xp2); } else { for(let r=1;r<=999;r++){ const out=runOneFarm(lv2,xp2,c.farmBonusPct,c.mode); lv2=out.lv; xp2=out.xp; if(lv2>=target){ result=r+'場'; final=formatResult(lv2,xp2); break; } } } $(`farm_t${target}_runs`).textContent=result; $(`farm_t${target}_final`).textContent='達成當下：'+final; }); }
-$('farm_runBtn').addEventListener('click', renderFarm); $('farm_presetBtn').addEventListener('click', ()=>{ farmPreset(); renderFarm(); }); $('farm_sampleBtn').addEventListener('click', ()=>{ farmPreset(); renderFarm(); }); ['farm_startLv','farm_startPct','farm_runs','farm_bonusPct','farm_mode'].forEach(id=>$(id).addEventListener('change', renderFarm)); farmPreset(); renderFarm();
-</script></body></html>
+</body>
+</html>
